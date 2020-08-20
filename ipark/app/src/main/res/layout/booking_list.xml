@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/aileron_regular"
+                    android:text="Name"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:text=":"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/aileron_regular"
+                    android:text="Nidhi Umrao"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/aileron_regular"
+                    android:text="Booking Date"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:text=":"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/aileron_regular"
+                    android:text="04 aug 2020"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/aileron_regular"
+                    android:text="Amount"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:text=":"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/aileron_regular"
+                    android:text="21$ per day"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/Black"
+                    android:fontFamily="@font/aileron_regular"
+                    android:text="Reservation"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:text=":"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/aileron_regular"
+                    android:text="Car Parking"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Book">
+
+    <fragment
+        android:id="@+id/nav_Book"
+        android:name="com.iparksimple.app.Activity.ui.book.BookFragment"
+        android:label="Book"
+        tools:layout="@layout/fragment_book" />
+
+    <fragment
+        android:id="@+id/nav_Profile"
+        android:name="com.iparksimple.app.Activity.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_Booking"
+        android:name="com.iparksimple.app.Activity.ui.booking.BookingFragment"
+        android:label="Booking"
+        tools:layout="@layout/fragment_booking" />
+
+    <fragment
+        android:id="@+id/nav_Notification"
+        android:name="com.iparksimple.app.Activity.ui.Notification.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/nav_Vehicle"
+        android:name="com.iparksimple.app.Activity.ui.Vehicles.VehiclesFragment"
+        android:label="Vehicle"
+        tools:layout="@layout/fragment_vehicle" />
+
+    <fragment
+        android:id="@+id/nav_Payment"
+        android:name="com.iparksimple.app.Activity.ui.payment.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment" />
+
+    <fragment
+        android:id="@+id/navigation_Daily"
+        android:name="com.iparksimple.app.Activity.ui.daily.DailyFragment"
+        android:label="Daily"
+        tools:layout="@layout/fragment_daily"/>
+
+    <fragment
+        android:id="@+id/navigation_Monthly"
+        android:name="com.iparksimple.app.Activity.ui.Monthly.MonthlyFragment"
+        android:label="Monthly"
+        tools:layout="@layout/fragment_monthly">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Airport"
+        android:name="com.iparksimple.app.Activity.ui.Airport.AirportFragment"
+        android:label="Airport"
+        tools:layout="@layout/fragment_airport">
+    </fragment>
+</navigation>

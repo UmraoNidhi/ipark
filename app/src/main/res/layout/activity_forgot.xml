@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.ForgotActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/white_button_shape"
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp">
+
+            </ImageView>
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:id="@+id/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:background="@drawable/forgot_password"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:scaleType="fitXY"
+        android:layout_height="150dp">
+
+    </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Forgot Password"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginTop="40dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:text="Enter your mobile number/ email address"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/montserrat_light">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="to recover your password"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/montserrat_light">
+
+        </TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:textColorHint="@color/Black"
+        android:textColor="@color/Black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:drawableStart="@drawable/forgot_icon"
+            android:imeOptions="actionNext"
+            android:lines="1"
+            android:maxLength="40"
+            android:drawablePadding="6dp"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/montserrat_light"
+            android:textColorHint="@color/Black">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/Button_continue"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_regular">
+
+
+        </Button>
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/Progress_bar"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+
+</RelativeLayout>

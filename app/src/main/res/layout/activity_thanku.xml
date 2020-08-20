@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ThankuActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/Linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/thnku"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+        </ImageView>
+
+        <TextView
+            android:padding="5dp"
+            android:text="THANK YOU"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:padding="5dp"
+            android:text="You will receive your confirmation email at"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:padding="5dp"
+            android:text="abc.text@gamil.com"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/But_continue"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_alignParentBottom="true">
+    </Button>
+
+
+</RelativeLayout>

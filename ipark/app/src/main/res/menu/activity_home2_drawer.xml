@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Book"
+            android:icon="@drawable/book"
+            android:title="Book" />
+        <item
+            android:id="@+id/nav_Profile"
+            android:icon="@drawable/profile_nav"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_Booking"
+            android:icon="@drawable/booking"
+            android:title="Bookings" />
+        <item
+            android:id="@+id/nav_Notification"
+            android:icon="@drawable/notification"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_Vehicle"
+            android:icon="@drawable/vehicle"
+            android:title="Vehicles" />
+        <item
+            android:id="@+id/nav_Payment"
+            android:icon="@drawable/payment"
+            android:title="Payments" />
+        <item
+            android:id="@+id/Report"
+            android:icon="@drawable/newterm"
+            android:title="Report">
+
+        </item>
+        <item
+            android:id="@+id/Share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share">
+
+        </item>
+
+        <item
+            android:id="@+id/About"
+            android:icon="@drawable/newterm"
+            android:title="About Us">
+
+        </item>
+        <item
+            android:id="@+id/Contact"
+            android:icon="@drawable/contact"
+            android:title="Contact Us">
+
+        </item>
+        <item
+            android:id="@+id/Privacy"
+            android:icon="@drawable/newprivacy"
+            android:title="Privacy Policy">
+
+        </item>
+
+        <item
+            android:id="@+id/nav_Logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

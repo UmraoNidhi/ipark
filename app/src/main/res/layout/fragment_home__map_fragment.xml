@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="50dp"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Home_Map_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:background="@drawable/white_button_shape"
+        android:id="@+id/Linear_text"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:id="@+id/MapView"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Map View"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:gravity="right"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:src="@drawable/map_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:id="@+id/Linear_list"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/list_view"
+                android:padding="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+            </ImageView>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="List View"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:textColor="@color/Black"
+                android:gravity="left"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:layout_marginTop="10dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/frg"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Linear_Multi_image"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="@dimen/margine"
+            android:layout_marginBottom="@dimen/margine"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="Recent Booking"
+            android:padding="3dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeStepGranularity="1sp"
+            android:textColor="@color/orange"
+            android:gravity="left"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <FrameLayout
+            android:id="@+id/banner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/SliderDots"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:gravity="bottom|center"
+                android:orientation="horizontal"
+                android:padding="5dp" />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/Progress_bar"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ProgressBar>
+</RelativeLayout>

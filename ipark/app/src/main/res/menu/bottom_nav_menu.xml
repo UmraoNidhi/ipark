@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_Daily"
+        android:icon="@drawable/daily_hourly"
+        android:title="Hourly/Daily" />
+
+    <item
+        android:id="@+id/navigation_Monthly"
+        android:icon="@drawable/monthly"
+        android:title="Monthly" />
+
+    <item
+        android:id="@+id/navigation_Airport"
+        android:icon="@drawable/airport"
+        android:title="Airport" />
+
+</menu>

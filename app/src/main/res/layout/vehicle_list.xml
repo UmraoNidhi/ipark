@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/row_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/iv_radioBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_radio_button_unchecked_black_24dp"/>
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/Radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false">
+        </RadioButton>
+
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="100sp"
+            android:autoSizeStepGranularity="1sp"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Hero, Red,US0987345"
+            android:textColor="@color/Black">
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

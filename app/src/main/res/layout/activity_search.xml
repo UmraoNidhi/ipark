@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SearchActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardPreventCornerOverlap="true">
+        <androidx.appcompat.widget.Toolbar
+            android:background="@drawable/white_button_shape"
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/Image_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp">
+
+                </ImageView>
+                <RelativeLayout
+                    android:id="@+id/rl_searchview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:background="@drawable/black_outline_box">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/text_color"
+                        android:text="Search address, location and events..."/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/search"
+                        android:tint="@color/trans_black"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:padding="3dp"
+                    android:layout_gravity="right"
+                    android:id="@+id/Image_filter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/filter">
+
+                </ImageView>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/CardView"
+        android:id="@+id/Tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_selecter"
+        app:tabBackground="@drawable/tab_selecter"
+        app:tabIndicatorColor="@color/blue"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#000" >
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/Tab_layout"
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

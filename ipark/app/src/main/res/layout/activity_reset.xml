@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ResetActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/white_button_shape"
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/TextView"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/aileron_bold"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:textSize="18sp">
+
+            </TextView>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/reset_password">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Reset Password"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:fontFamily="@font/aileron_bold"
+            android:layout_marginTop="40dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:text="Enter OTP you have received in your "
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/aileron_light">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:text="email address \ mobile number"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:fontFamily="@font/aileron_light">
+
+        </TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/Black"
+            android:textColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:hint="OTP"
+                android:drawableStart="@drawable/password_lock"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:lines="1"
+                android:drawablePadding="10dp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/aileron_light"
+                android:textColorHint="@color/Black">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/Black"
+            android:textColor="@color/Black"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:hint="Password"
+                android:drawableStart="@drawable/password_lock"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:drawablePadding="10dp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/aileron_light"
+                android:textColorHint="@color/Black">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/Black"
+            android:textColor="@color/Black"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_co_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:hint="Confirm Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:drawableStart="@drawable/password_lock"
+                android:drawablePadding="10dp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/aileron_light"
+                android:textColorHint="@color/Black">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:fontFamily="@font/aileron_bold">
+
+
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

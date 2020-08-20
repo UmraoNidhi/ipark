@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graycolor"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/white_button_shape"
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Image_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp">
+
+            </ImageView>
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/Black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Card Details"
+                android:fontFamily="@font/montserrat_regular"
+                android:id="@+id/TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardCornerRadius="3dp"-->
+<!--            app:cardUseCompatPadding="true"-->
+<!--            app:cardElevation="3dp">-->
+            <LinearLayout
+                android:background="@drawable/white_button_shape"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp">
+
+                </RadioButton>
+                <ImageView
+                    android:layout_weight=".5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/paypal">
+
+                </ImageView>
+            </LinearLayout>
+
+
+<!--        </androidx.cardview.widget.CardView>-->
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="3dp">
+        <LinearLayout
+            android:background="@drawable/amazonpay"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RadioButton
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:textColorHint="@color/white"
+                android:layout_width="30dp"
+                android:layout_height="20dp">
+
+            </RadioButton>
+            <ImageView
+                android:layout_weight=".5"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </ImageView>
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cardUseCompatPadding="true"-->
+<!--            app:cardCornerRadius="3dp"-->
+<!--            app:cardElevation="3dp">-->
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/white_button_shape"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <RadioButton
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:textColorHint="@color/white"
+                android:layout_width="30dp"
+                android:layout_height="20dp">
+
+            </RadioButton>
+            <ImageView
+                android:layout_weight=".5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/gooogle_pay">
+
+            </ImageView>
+        </LinearLayout>
+
+<!--        <ImageView-->
+<!--                android:padding="15dp"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:src="@drawable/gooogle_pay">-->
+
+<!--            </ImageView>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color">
+
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="@color/blue"
+            android:padding="5dp">
+
+        </TextView>
+        <View
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color">
+
+        </View>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/white"
+        android:id="@+id/Recycler_card"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/Add_newDetail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/text_color"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/Radio_another"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+            </RadioButton>
+
+            <TextView
+                android:textColor="@color/Black"
+                android:padding="5dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16sp"
+                android:text="Another Card "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/Selected_another"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/Black"
+                android:padding="5dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16sp"
+                android:text="Debit Card &amp; Credit Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/Black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:hint="Card Holder Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="40"
+                    android:drawablePadding="6dp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textColorHint="@color/Black">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/Black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_CardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:hint="Card Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="16"
+                    android:drawablePadding="6dp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textColorHint="@color/Black">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_Month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:hint="MM"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="2"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textColorHint="@color/Black">
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_Year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:hint="YYYY"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="4"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textColorHint="@color/Black">
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_CVV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center"
+                        android:hint="CVV"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLength="4"
+                        android:drawablePadding="6dp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/montserrat_light"
+                        android:textColorHint="@color/Black">
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_below="@id/Linear_date"
+            android:id="@+id/But_continue"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm &amp; Pay"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_regular">
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/Linear_summary"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/summary"
+                    android:layout_width="50dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:layout_height="40dp">
+
+                </ImageView>
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="Booking Summary"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/text_color"
+                android:layout_width="match_parent"
+                android:layout_height="0.01dp">
+
+            </View>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Arrival Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="2020/08/19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Arrival Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="2:00PM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Leaving Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="2020/08/20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Leaving Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="5:00 PM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Convenience Fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:textSize="14sp"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="$0.55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/text_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp">
+
+            </View>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="Total"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color"
+                    android:gravity="left"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="$18"
+                    android:textSize="16sp"
+                    android:textColor="@color/orange"
+                    android:gravity="right"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:visibility="gone"
+        android:layout_below="@id/Linear_date"
+        android:id="@+id/But_save"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold">
+    </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

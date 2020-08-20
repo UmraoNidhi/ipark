@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:background="@color/graycolor"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Text_days"
+            android:layout_below="@id/But_continue"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Monday"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/Black"
+            android:gravity="left"
+            android:fontFamily="@font/montserrat_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/Text_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/But_continue"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="center"
+            android:text="09:00 AM - 11:40 PM"
+            android:textColor="@color/Black"
+            android:textSize="14sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

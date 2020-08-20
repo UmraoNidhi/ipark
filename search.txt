@@ -1,0 +1,44 @@
+ <LinearLayout
+                android:layout_weight="3"
+                android:layout_marginLeft="20dp"
+                android:background="@color/light_blue"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_weight="2"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/Black"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="Search"
+                    android:id="@+id/TextView"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </EditText>
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/Image_search"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="20dp"
+                    app:srcCompat="@drawable/places_ic_search">
+
+                </ImageView>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="3dp"
+                android:layout_gravity="right"
+                android:id="@+id/Image_filter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/filter">
+
+            </ImageView>

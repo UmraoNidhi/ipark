@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="60dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.Home_Map_fragment">
+
+    <LinearLayout
+        android:background="@drawable/white_button_shape"
+        android:id="@+id/Linear_text"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/Linear_list"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="List View"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:gravity="right"
+                android:fontFamily="@font/aileron_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <ImageView
+                android:src="@drawable/list_view"
+                android:padding="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+            </ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/MapView"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:src="@drawable/map"
+                android:layout_width="30dp"
+                android:layout_height="30dp">
+
+            </ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Map View"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/aileron_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:layout_marginTop="10dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/frg"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <LinearLayout
+        android:id="@+id/Linear_Multi_image"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/banner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
